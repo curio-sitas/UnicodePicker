@@ -1,0 +1,31 @@
+{
+  "name": "unicodepicker",
+  "version": "1.0.0",
+  "description": "A unicode picker",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ParadiseLab/UnicodePicker.git"
+  },
+  "keywords": [
+    "Unicode",
+    "Special",
+    "Characters",
+    "Picker"
+  ],
+  "author": "Brian SINQUIN",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ParadiseLab/UnicodePicker/issues"
+  },
+  "homepage": "https://github.com/ParadiseLab/UnicodePicker#readme",
+  "devDependencies": {
+    "electron": "^10.1.1"
+  },
+  "dependencies": {
+    "unicode-range-json": "^1.0.1"
+  }
+}

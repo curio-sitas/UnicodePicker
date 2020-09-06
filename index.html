@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  </head>
+  <body>
+    <div id="test"></div>
+  </body>
+  
+  <script>
+  
+/*   for (let index = 0; index < 9000; index++) {
+    sp=document.createElement("SPAN")
+    document.getElementById("test").appendChild(sp)
+    sp.textContent=String.fromCharCode(index)  
+  } */
+  const unicodeRanges = require('unicode-range-json');
+  console.log(unicodeRanges);
+  
+  </script>
+</html>
