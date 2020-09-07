@@ -15,4 +15,5 @@ cache:
 before_script:
   - npm install electron-packager -g
 script:
-  - npm compile
+  - npm install
+  - electron-packager . UnicodePicker

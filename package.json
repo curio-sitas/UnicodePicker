@@ -4,8 +4,7 @@
   "description": "A unicode picker",
   "main": "main.js",
   "scripts": {
-    "start": "npm install && electron .",
-    "compile": "electron-packager . UnicodePicker"
+    "start": "npm install && electron ."
   },
   "build": {
     "appId": "yourappid",
