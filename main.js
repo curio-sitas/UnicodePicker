@@ -1,5 +1,5 @@
 const { app, BrowserWindow } = require('electron')
-
+const path = require('path')
 function createWindow () {
   // Cree la fenetre du navigateur.
   const win = new BrowserWindow({

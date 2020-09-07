@@ -2,22 +2,30 @@
   <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <style>
+      body{
+        font-family: 'Noto Sans', 'Noto Sans JP', 'Noto Sans KR' sans-serif;
+      }
+    </style>
   </head>
   <body>
-    <div id="test"></div>
+    <div id="selection">
+
+    <select id='select' onchange="s_update()">
+
+    </select>
+
+    </div>
+    <div id="list">
+
+    </div>
+    <script src="./renderer.js"></script>
   </body>
-  
-  <script>
-  
-/*   for (let index = 0; index < 9000; index++) {
-    sp=document.createElement("SPAN")
-    document.getElementById("test").appendChild(sp)
-    sp.textContent=String.fromCharCode(index)  
-  } */
-  const unicodeRanges = require('unicode-range-json');
-  console.log(unicodeRanges);
-  
-  </script>
+
+
 </html>
