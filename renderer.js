@@ -10,6 +10,7 @@ const unicodeRanges = require('unicode-range-json');
 
  */
 var select = document.getElementById('select');
+    
 
 unicodeRanges.forEach(range => {
     var opt = document.createElement('option');

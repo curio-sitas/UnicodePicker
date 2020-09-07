@@ -1,30 +1,77 @@
 <html>
   <head>
+    <script src="./js/jquery.min.js"></script>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <title>UnicodePicker</title>
+
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/materialize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/materialize.min.js"></script>
+   
+
     <style>
       body{
-        font-family: 'Noto Sans', 'Noto Sans JP', 'Noto Sans KR' sans-serif;
+        font-family: 'Noto Sans', sans-serif;
       }
     </style>
   </head>
-  <body>
-    <div id="selection">
-
-    <select id='select' onchange="s_update()">
-
-    </select>
-
+  <body class="teal darken-2">
+    <nav>
+      <div class="nav-wrapper teal darken-2">
+        
+          
+          
+    
+        <a href="#" class="brand-logo right">Logo</a>
+        
+           
+  
+           
+       
+      </div>
+     
+    </nav>
+    <div class="section" id="page container">
+      <div class="row">
+      <div class="col 5 center">
+        <select class="browser-default" id="select" onchange="s_update()">
+          <option value="" disabled selected>Choose your option</option>
+    
+        </select>
+      </div>
     </div>
-    <div id="list">
-
+    <div class="progress">
+      <div class="indeterminate"></div>
+  </div>
+    
+      <div id="list"></div>
     </div>
+ 
+   
+
+    <footer class="page-footer teal darken-2">
+      <div class="footer-copyright">
+        <div class="container">
+        © 2020 Brian SINQUIN
+        <a class="grey-text text-lighten-4 right" href="https://paradiselab.fr">ParadiseLab</a>
+        </div>
+      </div>
+    </footer>
+    
+    <script type="text/javacsript">
+      $(document).ready(function () {
+        $(document).ready(function(){
+    $('select').formSelect();
+  });
+});
+   
+    </script>
+
     <script src="./renderer.js"></script>
+
+
   </body>
 
 
