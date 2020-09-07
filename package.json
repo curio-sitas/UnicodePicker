@@ -4,7 +4,36 @@
   "description": "A unicode picker",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "npm install && electron .",
+    "win_compile": "electron-packager . UnicodePicker --platform=win32 --arch=x64"
+  },
+  "build": {
+    "appId": "yourappid",
+    "category": "your.app.category.type",
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "squirrel",
+      "icon": "build/icon.ico"
+    }
   },
   "repository": {
     "type": "git",
@@ -23,9 +52,11 @@
   },
   "homepage": "https://github.com/ParadiseLab/UnicodePicker#readme",
   "devDependencies": {
-    "electron": "^10.1.1"
+    "electron": "latest",
+    "electron-builder": "latest",
+    "electron-packager": "latest"
   },
   "dependencies": {
-    "unicode-range-json": "^1.0.1"
+    "unicode-range-json": "latest"
   }
 }
