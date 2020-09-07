@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "npm install && electron .",
-    "win_compile": "electron-packager . UnicodePicker --platform=win32 --arch=x64"
+    "compile": "electron-packager . UnicodePicker"
   },
   "build": {
     "appId": "yourappid",
