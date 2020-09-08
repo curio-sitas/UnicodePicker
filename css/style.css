@@ -1,9 +1,48 @@
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
+.unicode-card {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+  background-color: white;
+  transition: 0.3s;
+  padding: 10px 10px;
+  cursor: pointer;
+  font-size: 30;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  border-radius: 2px; /* 5px rounded corners */
+  margin: 4px 4px;
+}
 
-  main {
-    flex: 1 0 auto;
-  }
+.unicode-card:hover {
+  
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.7);
+  background-color: teal;
+  color: white;
+}
+
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+nav
+{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+
+}
+#list{
+  padding-top: 50px;
+}
