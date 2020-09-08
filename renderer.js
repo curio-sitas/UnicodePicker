@@ -9,6 +9,12 @@ const unicodeRanges = require('unicode-range-json');
   }
 
  */
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems, "");
+  });
+ 
 var select = document.getElementById('select');
     
 
@@ -42,8 +48,15 @@ function update_html(range)
 
     for(var i = range[0]; i <= range[1]; i++)
     {
-        var c = document.createElement("li")
+        
+        var c = document.createElement("div")
+        c.className="col s1 unicode-card"
+        c.setAttribute("onclick","unicode_click()")
         c.innerText = String.fromCodePoint(i)
         div.appendChild(c)
     }
+}
+function unicode_click()
+{
+    console.log("A")
 }

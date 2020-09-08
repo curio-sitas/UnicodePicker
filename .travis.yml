@@ -1,4 +1,3 @@
-# https://medium.com/@LihauTan/5-steps-to-build-nodejs-using-travis-ci-fd7bcd030106
 notifications:
   email: false
 language: node_js
