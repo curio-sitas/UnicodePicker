@@ -4,7 +4,7 @@
   transition: 0.3s;
   padding: 10px 10px;
   cursor: pointer;
-  font-size: 30;
+  font-size: 25;
   text-align: center;
   width: 100%;
   height: auto;
@@ -14,7 +14,7 @@
 
 .unicode-card:hover {
   
-  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.7);
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.7);
   background-color: teal;
   color: white;
 }
@@ -45,4 +45,13 @@ nav
 }
 #list{
   padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+#flash, #char
+{
+  font-weight: 500;
+  color: white;
+  text-shadow: black;
+  font-size: 15;
 }

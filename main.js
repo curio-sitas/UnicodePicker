@@ -7,6 +7,7 @@ function createWindow () {
     height: 600,
     webPreferences: {
       nodeIntegration: true
+      
     }
   })
 
@@ -14,9 +15,10 @@ function createWindow () {
   win.loadFile('index.html')
 
   // Ouvre les DevTools.
-  win.webContents.openDevTools()
+  //win.webContents.openDevTools()
   win.setMenuBarVisibility(false)
   win.setResizable(false)
+  win.setIcon("./logo.png")
 }
 
 app.whenReady().then(createWindow)

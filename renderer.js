@@ -27,6 +27,8 @@ unicodeRanges.forEach(range => {
 
 function s_update()
 {
+    var load = document.getElementById("loading")
+    load.style.display = "block"
     unicodeRanges.forEach(range => {
         if (range.category!=select.value)
         {
@@ -38,6 +40,7 @@ function s_update()
         }
         
     });
+    load.style.display = "none"
 }
 
 function update_html(range)
@@ -51,12 +54,18 @@ function update_html(range)
         
         var c = document.createElement("div")
         c.className="col s1 unicode-card"
-        c.setAttribute("onclick","unicode_click()")
+        
+        c.setAttribute("onclick","unicode_click(this.id)")
         c.innerText = String.fromCodePoint(i)
+        c.setAttribute("id", c.innerText)
         div.appendChild(c)
     }
 }
-function unicode_click()
+function unicode_click(id)
 {
-    console.log("A")
+    var c = document.getElementById('flash');
+    
+    c.innerHTML = id+" copied to clipboard !";
+    
+    navigator.clipboard.writeText(id)
 }
