@@ -38,11 +38,11 @@
       ]
     },
     "appImage": {
-      "license": "MIT"
+      "license": "LICENSE"
     },
     "nsis": {
       "createDesktopShortcut": "always",
-      "license": "MIT"
+      "license": "LICENSE"
     }
   },
   "bugs": {
