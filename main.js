@@ -21,7 +21,7 @@ function createWindow () {
     //prevent resizing even if resizable property is true.
         e.preventDefault();
     });
-  win.setIcon("./logo.png")
+  win.setIcon("./build/icon.png")
 }
 
 app.whenReady().then(createWindow)
