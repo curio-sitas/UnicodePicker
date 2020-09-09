@@ -46,10 +46,6 @@
       "license": "LICENSE"
     }
   },
-  "directories": {
-    "buildResources": "resources",
-    "output": "release"
-},
   "bugs": {
     "url": "https://github.com/ParadiseLab/UnicodePicker/issues"
   },
