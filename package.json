@@ -21,7 +21,8 @@
   "author": "Brian SINQUIN",
   "license": "MIT",
   "build": {
-    "appId": "{paradiselab.unicodepicker}",
+    "productName": "UnicodePicker",
+    "appId": "{org.paradiselab.unicodepicker}",
     "publish": "github",
     "dmg": {
       "contents": [
@@ -45,6 +46,10 @@
       "license": "LICENSE"
     }
   },
+  "directories": {
+    "buildResources": "resources",
+    "output": "release"
+},
   "bugs": {
     "url": "https://github.com/ParadiseLab/UnicodePicker/issues"
   },

@@ -17,7 +17,10 @@ function createWindow () {
   // Ouvre les DevTools.
   //win.webContents.openDevTools()
   win.setMenuBarVisibility(false)
-  win.setResizable(false)
+  win.on('will-resize', (e) => {
+    //prevent resizing even if resizable property is true.
+        e.preventDefault();
+    });
   win.setIcon("./logo.png")
 }
 
