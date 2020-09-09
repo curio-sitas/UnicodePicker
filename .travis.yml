@@ -21,9 +21,6 @@ env:
     - ELECTRON_BUILDER_CACHE=$HOME/.cache/electron-builder
 jobs:
   include:
-    - stage: Test
-      script:
-        - npm test
     - stage: Deploy Windows & Mac
       if: tag IS present
       os: osx
